@@ -1,0 +1,31 @@
+{
+    "manifest_version": 3,
+    "name": "amber - mindfulness",
+    "version": "0.0.2",
+    "description": "Promotes mindfulness, preventing doomscrolling for Youtube, Tik Tok, Twitter, Instagram, and Reddit",
+    "action": {
+      "default_icon": "public/icons/icon_32.png",
+      "default_popup": "index.html"
+    },
+    "icons": {
+      "16": "public/icons/icon_16.png",
+      "32": "public/icons/icon_32.png",
+      "48": "public/icons/icon_48.png",
+      "128": "public/icons/icon_128.png"
+    },
+    "permissions": ["storage"],
+    "content_scripts": [
+      {
+        "matches": [
+          "*://*.youtube.com/*",
+          "*://*.tiktok.com/*",
+          "*://*.twitter.com/*",
+          "*://*.instagram.com/*",
+          "*://*.reddit.com/*"
+        ],
+        "run_at": "document_end",
+        "js": ["src/content.jsx"]
+      }
+    ]
+  }
+  
