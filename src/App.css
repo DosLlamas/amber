@@ -1,0 +1,19 @@
+/* Amber Logo styling */
+.amber-logo-container{
+    display: flex;
+    flex: 1 1 0%;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 16px;
+}
+.amber-logo{
+    height: 40px;
+}
+.amber-logo:hover{
+    filter: drop-shadow(0 0 2em #646cffaa);
+}
+.amber-logo.react:hover{
+    filter: drop-shadow(0 0 2em #61dafbaa);
+}
