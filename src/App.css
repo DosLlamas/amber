@@ -1,0 +1,20 @@
+.Intention {
+    border-radius: 5px;
+    height: 30%;
+    position: absolute;
+    width: 40%;
+    z-index: 9000;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: #fae091;
+    text-align: center;
+    top: 30%;
+    left: 30%;
+}
+.intention-header {
+    position: relative;
+    font-weight: 300;
+    font-size: xx-large;
+    color: #756944;
+  }

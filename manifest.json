@@ -24,7 +24,7 @@
           "*://*.reddit.com/*"
         ],
         "run_at": "document_end",
-        "js": ["src/content.js"]
+        "js": ["src/content.jsx"]
       }
     ]
   }
