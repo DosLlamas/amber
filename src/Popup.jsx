@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Monke from "./assets/popupLogo.png";
-import "./App.css";
+import "./Popup.css";
 
 function App() {
   // get the time and intention as the user submits the forms to chrome.storage
