@@ -1,7 +1,7 @@
-.Intention {
+.intentionframe {
     border-radius: 5px;
     height: 30%;
-    position: absolute;
+    position: fixed;
     width: 40%;
     z-index: 9000;
     display: flex;
@@ -9,12 +9,293 @@
     flex-direction: column;
     background: #fae091;
     text-align: center;
-    top: 30%;
-    left: 30%;
-}
-.intention-header {
+  }
+  
+  .example {
     position: relative;
+    color: #756944;
     font-weight: 300;
     font-size: xx-large;
-    color: #756944;
   }
+  .example .overlay {
+    z-index: 1;
+    width: 30%;
+    position: absolute;
+    top: 10px;
+    right: 150px;
+  }
+  .exampleTime {
+    position: relative;
+    color: #756944;
+    font-weight: 300;
+    font-size: xx-large;
+    margin-bottom: 18px;
+  }
+  .exampleTime .timeoverlay {
+    z-index: 2;
+    width: 30%;
+    height: 30%;
+    position: absolute;
+    top: 40px;
+    right: 60px;
+  }
+  .askUserIntention {
+    display: flex;
+    justify-content: center;
+    color: #756944;
+    font-weight: 300;
+    font-size: xx-large;
+    margin-bottom: 8px;
+  }
+  .timeframe {
+    border-radius: 5px;
+    height: 50%;
+    position: fixed;
+    width: 40%;
+    z-index: 9000;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: #fae091;
+    text-align: center;
+  }
+  .intention-area {
+    margin-bottom: 5px;
+  }
+  .timeBtns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .writeIntention {
+    width: 80%;
+    max-height: 80%;
+    height: 60%;
+    border-radius: 10px;
+    color: #756944;
+    background-color: transparent;
+  }
+  .writeIntention[type="text"]:focus {
+    outline-color: #ffffff;
+  }
+  
+  .radio-btns {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .button-21:hover:not(:disabled) {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+  }
+  .button-21 {
+    z-index: 0;
+    background-color: #d78870;
+    border: solid #756944;
+    border-radius: 16px;
+    border-width: 2px;
+    box-sizing: border-box;
+    color: #756944;
+    cursor: pointer;
+    font-family: din-round, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 20px;
+    outline: none;
+    padding: 13px 90px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin-bottom: 5px;
+  }
+  .button-21:focus {
+    background-color: #b06446;
+  }
+  
+  .button-20:hover:not(:disabled) {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+  }
+  .button-20 {
+    z-index: 1;
+    background-color: #d78870;
+    border: solid #756944;
+    border-radius: 16px;
+    border-width: 2px;
+    box-sizing: border-box;
+    color: #756944;
+    cursor: pointer;
+    font-family: din-round, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 20px;
+    outline: none;
+    padding: 13px 90px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin-bottom: 5px;
+  }
+  .button-20:focus {
+    background-color: #b06446;
+  }
+  
+  .button-19:hover:not(:disabled) {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+  }
+  .button-19 {
+    z-index: 1;
+    background-color: #d78870;
+    border: solid #756944;
+    border-radius: 16px;
+    border-width: 2px;
+    box-sizing: border-box;
+    color: #756944;
+    cursor: pointer;
+    font-family: din-round, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 20px;
+    outline: none;
+    padding: 13px 90px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin-bottom: 5px;
+  }
+  .button-19:focus {
+    background-color: #b06446;
+  }
+  
+  .continue:after {
+    background-clip: padding-box;
+    border: solid;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+  
+  .continue:main,
+  .continue:focus {
+    user-select: auto;
+  }
+  
+  .continue:hover:not(:disabled) {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+  }
+  
+  .continue:disabled {
+    cursor: auto;
+  }
+  
+  .continue {
+    appearance: button;
+    background-color: #e7bcaf;
+    border: solid #756944;
+    border-radius: 16px;
+    border-width: 2px;
+    box-sizing: border-box;
+    color: #756944;
+    cursor: pointer;
+    font-family: din-round, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 13px 40px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter 0.2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    margin-right: 5px;
+  }
+  .time-continue:after {
+    background-clip: padding-box;
+    border: solid;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+  
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+  
+  .time-continue:main,
+  .time-continue:focus {
+    user-select: auto;
+  }
+  
+  .time-continue:hover:not(:disabled) {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+  }
+  
+  .time-continue:disabled {
+    cursor: auto;
+  }
+  
+  .time-continue {
+    z-index: 3;
+    appearance: button;
+    background-color: #e7bcaf;
+    border: solid #756944;
+    border-radius: 16px;
+    border-width: 2px;
+    box-sizing: border-box;
+    color: #756944;
+    cursor: pointer;
+    font-family: din-round, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 13px 40px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter 0.2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    margin-right: 5px;
+  }
+  .navigateApp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .not-allowed {
+    cursor: not-allowed;
+  }
+  
+  .disable {
+    background-color: #727272;
+    pointer-events: none;
+  }
+  

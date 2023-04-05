@@ -1,9 +1,11 @@
 import React, { useState } from "react";
-import 'fomantic-ui-css/semantic.css';
 import logo from "./assets/laptopbg.png";
 const url = chrome.runtime.getURL(logo);
 
-const Intention = ({ setShow }) => {
+
+// In the future I'd like to take whatever the user types and
+// put it in the search bar for them
+function Intention({ setShow }) {
   let savedIntention = "";
   chrome.storage.sync.get(["intention"], (result) => {
     savedIntention = result.intention;
@@ -15,7 +17,7 @@ const Intention = ({ setShow }) => {
     chrome.storage.sync.set({
       intention: submitIntention,
     });
-    setShow("showTimeScreen");
+    setShow("showTime.jsx");
   };
 
   return (
