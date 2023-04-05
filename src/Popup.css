@@ -1,51 +1,16 @@
-/* Amber Logo styling */
-.amber-logo-container {
+#root {
+  /* max-width: 1680px; */
+  /* max-height: 1280px; */
+  width: 60em;
+  height: 70em;
+  margin: 0 auto;
+  text-align: center;
+}
+.time-chart {
   display: flex;
-  flex: 1 1 0%;
-  -webkit-box-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  justify-content: space-between;
-  padding: 16px;
-}
-.amber-logo {
-  height: 40px;
-}
-.amber-logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.amber-logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-/* Timer and intention display */
-.timer-count {
-  margin: 0px;
-  font-weight: 700;
-  font-family: Lora, serif;
-  font-size: 24px;
-  line-height: 140%;
-  letter-spacing: 0px;
-  color: #b06446;
-}
-.intention-banner {
-  border-radius: 10px;
-  margin-left: 35px;
   flex-direction: column;
-
-  background-color: #fae091;
-  width: 80%;
 }
-.intention-banner-content {
-  margin: 0px;
-  font-weight: 600;
-  font-family: Lora, serif;
-  font-size: 18px;
-  line-height: 140%;
-  letter-spacing: 0px;
-  color: #fff;
-}
-/* Settings and login buttons */
-.navbar-container {
+.css-sow15l {
   flex: 0 1 0%;
   width: 100%;
   z-index: 3;
@@ -56,11 +21,61 @@
   justify-content: center;
   min-height: 78px;
 }
-.navbar-container:hover {
+css-sow15l:hover {
   fill: #d78870;
   color: #d78870;
 }
-.login-btn {
+.svg {
+  fill: #d78870;
+}
+.css-12hk6no {
+  /* justify-content:flex-end; */
+  text-align: center;
+  margin: 0px;
+  font-weight: 700;
+  font-family: Lora, serif;
+  font-size: 24px;
+  line-height: 140%;
+  letter-spacing: 0px;
+  color: #b06446;
+}
+.css-1wgha6y {
+  border-radius: 10px;
+  margin-left: 35px;
+  flex-direction: column;
+
+  background-color: #fae091;
+  width: 80%;
+}
+.css-13hk6no {
+  margin-left: 10%;
+  align-self:center;
+  /* margin: 0px; */
+  font-weight: 600;
+  font-family: Lora, serif;
+  font-size: 18px;
+  line-height: 140%;
+  color: #fff;
+}
+.css-1vkf8dl {
+  display: flex;
+  flex: 1 1 0%;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  padding: 16px;
+}
+.css-9kc4g4 {
+  height: 40px;
+}
+.css-9kc4g4:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.css-9kc4g4.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+.css-1hoy3kw {
   display: flex;
   position: relative;
   flex-direction: column;
@@ -72,22 +87,22 @@
   width: 115px;
   color: #d78870;
 }
-.login-btn:hover {
+.css-1hoy3kw:hover {
   color: #862b10;
   fill: #862b10;
   filter: drop-shadow(0 0 2em #646cffaa);
 }
-.login-btn path:hover {
+.css-1hoy3kw path:hover {
   color: #862b10;
   fill: #862b10;
   filter: drop-shadow(0 0 2em #646cffaa);
 }
-.login-btn svg:hover {
+.css-1hoy3kw svg:hover {
   color: #862b10;
   fill: #862b10;
   filter: drop-shadow(0 0 2em #646cffaa);
 }
-.settings-login-btn-text {
+.tou-1do714y {
   margin: 8px 0px 0px;
   font-weight: 700;
   font-family: Karla, sans-serif;
@@ -97,6 +112,49 @@
   text-transform: capitalize;
   color: inherit;
   text-align: center;
+}
+.Popup {
+  text-align: center;
+  min-width: 300px;
+}
+h1 {
+  font-family: Phantom Sans;
+  color: #d78870;
+}
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs1 {
+  color: #888;
+  font-size: 12px;
 }
 .read-the-docs2 {
   color: #888;

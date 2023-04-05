@@ -1,45 +1,54 @@
 import { useState } from "react";
+import D3 from './D3'
 import Monke from "./assets/popupLogo.png";
 import "./Popup.css";
 
-function App() {
-  // get the time and intention as the user submits the forms to chrome.storage
+
+function Popup() {
   const [minutes, setMinutes] = useState(0);
   chrome.storage.sync.get(["minutes"], (result) => {
     setMinutes(result.minutes);
   });
 
-  const [intention, setIntention] = useState("Write an intention :)");
+  const [intention, setIntention] = useState("write an intention :)");
   chrome.storage.sync.get(["intention"], (result) => {
     setIntention(result.intention);
   });
 
   return (
-    <div className="App">
-      <div className="amber-logo-container">
-        <a
-          href="https://chrome.google.com/webstore/detail/amber-mindfulness/hdfdgocligofefcgklikgpjadbphlipm?hl=es-419"
-          target="_blank"
-        >
-          <img src={Monke} alt="Amber Logo" className="amber-logo"></img>
-        </a>
+    <div className="Popup">
+      <div>
+        <div className="css-1vkf8dl">
+          <a href="https://chrome.google.com/webstore" target="_blank">
+            <img src={Monke} alt="Toucan logo" className="css-9kc4g4"></img>
+          </a>
+        </div>
       </div>
-      <div className="timer-count">{minutes} min</div>
+      <div className="css-12hk6no">{minutes} min</div>
       <hr />
-      <div className="intention-banner">
-        <p className="intention-banner-content">{intention}</p>
+      <div className="css-1wgha6y">
+        <p className="css-13hk6no">{intention}</p>
       </div>
-      <div className="navbar-container">
-        <div className="login-btn">
+
+      <div className="css-sow15l">
+        <div className="css-1hoy3kw">
           <svg width="21" height="21" viewBox="0 0 21 21">
             <path
               d="M16.667 2H4.66699C3.56242 2 2.66699 2.89543 2.66699 4C2.66699 5.10457 3.56242 6 4.66699 6H16.667C17.7716 6 18.667 5.10457 18.667 4C18.667 2.89543 17.7716 2 16.667 2ZM4.66699 0C2.45785 0 0.666992 1.79086 0.666992 4C0.666992 6.20914 2.45785 8 4.66699 8H16.667C18.8761 8 20.667 6.20914 20.667 4C20.667 1.79086 18.8761 0 16.667 0H4.66699ZM8.66699 14H4.66699C3.56242 14 2.66699 14.8954 2.66699 16C2.66699 17.1046 3.56242 18 4.66699 18H8.66699C9.77156 18 10.667 17.1046 10.667 16C10.667 14.8954 9.77156 14 8.66699 14ZM8.66699 20H16.667C18.8761 20 20.667 18.2091 20.667 16C20.667 13.7909 18.8761 12 16.667 12H8.66699H4.66699C2.45785 12 0.666992 13.7909 0.666992 16C0.666992 18.2091 2.45785 20 4.66699 20H8.66699ZM12.1319 18C12.4722 17.4117 12.667 16.7286 12.667 16C12.667 15.2714 12.4722 14.5883 12.1319 14H16.667C17.7716 14 18.667 14.8954 18.667 16C18.667 17.1046 17.7716 18 16.667 18H12.1319Z"
               fill="#d78870"
             ></path>
+            <defs>
+              <rect
+                width="20"
+                height="20"
+                fill="white"
+                transform="translate(0.666992)"
+              ></rect>
+            </defs>
           </svg>
-          <h6 className="settings-login-btn-text">Login</h6>
+          <h6 className="tou-1do714y">Login</h6>
         </div>
-        <div className="login-btn">
+        <div className="css-1hoy3kw">
           <svg width="21" height="21" viewBox="0 0 21 21" fill="#d78870">
             <circle cx="10.334" cy="10" r="4" fill="white"></circle>
             <path
@@ -55,12 +64,31 @@ function App() {
               ></rect>
             </defs>
           </svg>
-          <h6 className="settings-login-btn-text">Settings</h6>
+          <h6 className="tou-1do714y">Settings</h6>
         </div>
       </div>
-      <p className="read-the-docs2">Click on the monke to learn more</p>
+      {/* <p className="read-the-docs1">login & settings coming soon...</p> */}
+        {/* <div  className="css-12hk6no">Usage</div>
+        <div className="css-sow15l">
+          <button>YouTube</button>
+          <button>Tik Tok</button>
+          <button>Instagram</button>
+          <button>Twitter</button>
+          <button>Reddit</button>
+        </div>
+        <div className="css-sow15l">
+          <div className="time-chart">
+            <button>Day</button>
+            <button>Week</button>
+            <button>Month</button>
+            <button>Year</button>
+          </div>
+          
+        </div> */}
+        <p className="read-the-docs2">Click on the monkey to learn more</p>
+        <D3 />
     </div>
   );
 }
 
-export default App;
+export default Popup;
