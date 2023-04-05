@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import 'fomantic-ui-css/semantic.css';
+import "fomantic-ui-css/semantic.css";
 import logo from "./assets/laptopbg.png";
 const url = chrome.runtime.getURL(logo);
 
@@ -19,15 +19,8 @@ const Intention = ({ setShow }) => {
   };
 
   return (
-    <div className="Intention">
-        <div className="intention-header">
-            What is your intention?
-        </div>
-        <div className="ui icon input">
-            <input type="text" placeholder="Search..." />
-            <i className="search icon" style={{visibility: "visible"}}></i>
-        </div>
-      {/* <div className="example">
+    <div className="intentionframe">
+      <div className="example">
         What is your intention?
         <div className="overlay">
           <img src={url} />
@@ -48,9 +41,9 @@ const Intention = ({ setShow }) => {
         <div>
           <input className="continue" type="submit" value="Continue" />
         </div>
-      </form> */}
+      </form>
     </div>
   );
-}
+};
 
 export default Intention;
