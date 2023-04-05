@@ -2,11 +2,10 @@ import React, { useState } from "react"
 import 'fomantic-ui-css/semantic.css';
 import { Container, Header } from 'semantic-ui-react';
 import Intention from "./Intention.jsx"
-// import Time from "./Time.jsx"
+import Time from "./Time.jsx"
 import "./App.css"
 import logo from "./assets/laptopbg.png";
 const url = chrome.runtime.getURL(logo);
-
 
 // dim the brightness on everything except amber app
 const transitionTime = 3;
@@ -30,7 +29,7 @@ const App = () => {
           return <Intention key="Intention.jsx" setShow={setHandleContinue} />;
         } else if (handleContinue == "ShowTimeScreen") {
           return (
-            <TimeForm
+            <Time
               key="Time.jsx"
               show={handleContinue}
               setShow={setHandleContinue}

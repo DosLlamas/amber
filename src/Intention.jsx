@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "fomantic-ui-css/semantic.css";
+import 'fomantic-ui-css/semantic.css';
 import logo from "./assets/laptopbg.png";
 const url = chrome.runtime.getURL(logo);
 
@@ -44,6 +44,6 @@ const Intention = ({ setShow }) => {
       </form>
     </div>
   );
-};
+}
 
 export default Intention;
