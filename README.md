@@ -29,4 +29,4 @@ Click **Load unpacked**, then drag your dist folder into the Extensions Dashboar
 
 ---
 
-This project was integrated with [CRXJS Vite Plugin](https://crxjs.dev/vite-plugin/getting-started/react/create-project) and developed in React.js
+This project was integrated with [CRXJS Vite Plugin](https://crxjs.dev/vite-plugin/getting-started/react/create-project) and developed with JavaScript, React, HTML, and CSS
